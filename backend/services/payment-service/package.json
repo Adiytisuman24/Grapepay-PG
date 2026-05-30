@@ -1,0 +1,23 @@
+{
+  "name": "@grapepay/payment-service",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.600.0",
+    "@aws-sdk/lib-dynamodb": "^3.600.0",
+    "@grapepay/shared": "*",
+    "dotenv": "^16.4.5",
+    "kafkajs": "^2.2.4",
+    "stripe": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}

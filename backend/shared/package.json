@@ -1,0 +1,22 @@
+{
+  "name": "@grapepay/shared",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.600.0",
+    "@aws-sdk/lib-dynamodb": "^3.600.0",
+    "ioredis": "^5.3.2",
+    "kafkajs": "^2.2.4",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.4.5"
+  }
+}
