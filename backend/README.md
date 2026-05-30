@@ -11,7 +11,7 @@ Frontend (React) → API Gateway (Express)
                   ┌─────┴──────┐
                   │            │
            Payment Service  Notification Service
-           (Stripe/Razorpay) (Email/SMS/Webhooks)
+           (Grapepay) (Email/SMS/Webhooks)
                   │
                DynamoDB + Redis
 ```
@@ -165,7 +165,7 @@ backend/
 │   │       ├── middleware/    # auth, rateLimit, logging, errorHandler
 │   │       └── routes/        # payments, invoices, customers, webhooks, auth, health
 │   │
-│   ├── payment-service/       # Kafka consumer → Stripe/Razorpay
+│   ├── payment-service/       # Kafka consumer → Grapepay
 │   │   └── src/
 │   │       └── services/paymentProcessor.ts
 │   │
